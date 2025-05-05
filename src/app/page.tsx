@@ -17,7 +17,7 @@ export default function LoginForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:9000';
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const url = isLogin ? `${API_URL}/login` : `${API_URL}/signup`;
 
      const body = isLogin
